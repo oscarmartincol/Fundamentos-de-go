@@ -118,3 +118,64 @@ Verificación del resultado
 : Una vez que
 go fmt
 haya terminado, podrás ver los cambios realizados en tus archivos. Los archivos que necesitaban formateo se actualizarán automáticamente con el estilo de formato Go estándar.
+
+# Pointers
+
+Al igual que los slices trabajan por referencia, por lo que si se realizan cambios al llamar la dirección de memoria se veran reflejados en la variable original.
+
+# Interfaces
+
+Sirve para instanciar distintos objetos con atributos y metodos en común.
+
+# Errors
+
+## Defer:
+
+Esta palabra reservada funciona para recuperar la aplicacion de errores que se pueden generar durante la ejecución.
+
+## Panic
+
+Esta palabra reservada puede ser utilizada para arrojar un error cuando no se cumple la logica.
+
+# Package
+
+## Internos
+
+Paquetes disponibles en el momento que se instala Go
+
+## Time
+
+Determina fechas y horas y realiza operaciones con ellas.
+
+## OS
+
+Aprovecha las funcionalidades del sistema operativo con las que se puede realizar operaciones como la lectura de archivos, configuracion de bases de datos etc...
+
+## Log
+
+Packete con el que se puede llevar el registro de errores que se presentan en el programa.
+
+## Externos
+
+Son paquetes que se requieren intalar de manera independiente para poder ser utilizados en el programa. Estos pueden estar almacenados en un repositorio como GitHub o Gitlab o ser importado de otras fuentes.
+
+## UUID
+
+Para instalarlo se debe utilizar el comando
+´go get github.com/google/uuid´
+
+Se utiliza para generar una identificación para diferentes usuarios o entidades que se van a utilizar en la aplicación.
+
+## Custom
+
+Librerias predeterminadas que se pueden subir a un repositorio y ustilizarlas en  nuevos proyectos.
+
+# Go Routines
+
+Permiten crear hilos o procesos para ejecutarse de manera simultanea, la cantidad de hilos que se pueden crear depende del numero de nucleos que se tengan en el equipo.
+
+Estas Goroutines finalizan en el momento que termina el proceso main. Cuando se utilizan canales, el proceso del hilo termina cuando se le es asignado un valor al canal y este debe ser cerrado al terminar el proceso.
+
+# Generics
+
+Sirven para especificar los tipos de datos que se quieren recibir en una función o interfaz.
